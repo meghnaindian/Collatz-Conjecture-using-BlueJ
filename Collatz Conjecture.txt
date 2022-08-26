@@ -1,0 +1,20 @@
+import java.util.*;
+class Collatz_Conjecture
+ {
+        public static void main (String args[])
+        {
+        Scanner sc=new Scanner (System.in);
+        double a;
+        System.out.println("Enter a positive integer: ");
+        a=sc.nextDouble();
+        System.out.println ("The Collatz Conjecture series : ");
+        while (a!=1) 
+        {
+            if (a%2==0)
+                a=(a/2);
+            else 
+                a=(3*a+1);
+            System.out.println(a);
+        }
+    }
+}
